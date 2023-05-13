@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todos, .no-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    margin: 30px auto;
+    width: 60%;
+}
+.counter-end-todo{
+    width: 100%;
+    font-weight: bold;
+}
+.no-data{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.todo{
+    width: 100% ;
+    border: 1px solid #0000006f;
+    box-shadow: 2px 2px 4px #474947;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px 0;
+}
+.completed {
+    text-decoration: line-through;
+    background: #08e4087d;
+}
+.todo .todo-content {
+    width: 70%;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+.todo .sub-text{
+    text-align: left;
+    font-style: italic;
+    font-size: 10px;
+    color: #3f413f7d;
+    padding: 3px;
+    margin-top: 8px;
+}
+.todo-btn{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 10px;
+}
+.todo-btn button{
+    width: 25%;
+    padding: 15px;
+    border: none;
+    background-color: inherit;
+    font-weight: bold;
+    color: #fff;
+}
+.todo-btn button:hover{
+    cursor: pointer;
+}
+button.edit{
+    color: #0f94dc;
+}
+button.delete{
+    color: #f55f5f;
+}
+button.ok{
+    color: #ec43e1;
+}
+form{
+    width: 60%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #000;
+}
+.form-group{
+    width: 100%;
+    padding: 10px;
+}
+.form-group input[type="text"]{
+    width: 85%;
+    padding: 10px;
+    font-size: 15px;
+    font-style: italic;
+    align-self: flex-start;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.form-group input[type="text"]:focus{
+    outline: none;
+}
+.error{
+    outline: 1px solid #ff000081;
+}
+.form-group button{
+    width: 15%;
+    padding: 11px;
+    align-self: flex-end;
+    border: none;
+    background-color: #0f94dc;
+    font-weight: bold;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.form-group button:hover{
+   color: #fff;
+}
